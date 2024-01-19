@@ -14,7 +14,7 @@ export default {
             axios.get(`${this.BASE_URL}/characters`)
                 .then(res => {
                     this.characters = res.data.results;
-                    console.log(this.characters);
+                    // console.log(this.characters);
                 });
         }
     },
