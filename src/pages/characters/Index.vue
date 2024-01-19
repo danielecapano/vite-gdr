@@ -31,7 +31,7 @@ export default {
         <div class="char-list">
             <ul>
                 <li v-for="character in characters" key="character.id">
-                    <router-link :to="{ name: 'characters.show', params: { id: characters.id } }">
+                    <router-link :to="{ name: 'characters.show', params: { id: character.id } }">
                         <h4>{{ character.name }}</h4>
                     </router-link>
                 </li>
